@@ -2087,7 +2087,7 @@ class P2PNode:
                 print(f"{Sex.WHITE}drops     ::{Sex.END}  {Sex.PURPLE}{len(self.dropTransfers)}{Sex.END}")
 
 
-        elif cmd in ['/cls', 'clear', 'clean']:
+        elif cmd in ['/cls', '/clear', '/clean']:
             self.cleanScreen()
             self.cleanMem()
             print(f"{Sex.GRAY}[Cleaned]{Sex.END}\n")
@@ -2139,7 +2139,7 @@ class P2PNode:
 
 
 
-        elif cmd in ['h', 'm', 'menu', 'help', 'ayuda']:
+        elif cmd in ['/h', '/m', '/menu', '/help', '/ayuda']:
             print(f"\n{Sex.GRAY}[commands]       [desc]{Sex.END}")
             print(f"  /peers     {Sex.GRAY}::{Sex.END} {Sex.CYAN}show peers{Sex.END}")
             print(f"  /known     {Sex.GRAY}::{Sex.END} {Sex.CYAN}show known Peers{Sex.END}")
